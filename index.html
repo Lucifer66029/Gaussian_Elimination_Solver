@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">ó
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solving Linear Equations System</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Solving Linear Equations System using Gaussian Elimination</h1>
+        
+        <label>Number of equations (rows):</label>
+        <input type="number" id="rows" min="1" value="2"><br>
+        
+        <label>Number of variables (columns, including constants column):</label>
+        <input type="number" id="cols" min="2" value="3"><br>
+        
+        <button onclick="createMatrix()">Create Matrix</button>
+        
+        <div id="matrixDiv" class="hidden">
+            <h2>Enter the augmented matrix elements:</h2>
+            <table id="matrixTable"></table>
+            
+            <button onclick="solveSystem()">Solve System</button>
+            
+            <div id="modifyDiv" class="hidden">
+                <h3>Modify Element:</h3>
+                <label>Row number:</label>
+                <input type="number" id="modRow" min="1"><br>
+                <label>Column number:</label>
+                <input type="number" id="modCol" min="1"><br>
+                <label>New value:</label>
+                <input type="number" step="any" id="modValue"><br>
+                <button onclick="modifyElement()">Modify</button>
+                <button onclick="hideModify()">Hide</button>
+            </div>
+            <button onclick="showModify()">Show Modify Option</button>
+        </div>
+        
+        <div id="output"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
