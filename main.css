@@ -1,15 +1,26 @@
 :root {
-  --primary-bg: #000000; /* Main background (black) */
-  --secondary-bg: #111111; /* Container background (dark black) */
-  --text-color: #ffffff; /* Text color (white) */
-  --accent-color: #add8e6; /* Headings color (light blue) */
-  --input-bg: #000000; /* Input background (black) */
-  --input-color: #ffffff; /* Input text color (white) */
-  --border-color: #ffffff; /* Borders (white) */
-  --button-bg: #4169e1; /* Button background (royal blue) */
-  --button-hover: #0000cd; /* Button hover (darker blue) */
-  --table-bg: #000000; /* Table background (black) */
-  --table-header-bg: #333333; /* Table header background (darker gray) */
+  --primary-bg: #000000;
+  /* Main background (black) */
+  --secondary-bg: #111111;
+  /* Container background (dark black) */
+  --text-color: #ffffff;
+  /* Text color (white) */
+  --accent-color: #add8e6;
+  /* Headings color (light blue) */
+  --input-bg: #000000;
+  /* Input background (black) */
+  --input-color: #ffffff;
+  /* Input text color (white) */
+  --border-color: #ffffff;
+  /* Borders (white) */
+  --button-bg: #4169e1;
+  /* Button background (royal blue) */
+  --button-hover: #0000cd;
+  /* Button hover (darker blue) */
+  --table-bg: #000000;
+  /* Table background (black) */
+  --table-header-bg: #333333;
+  /* Table header background (darker gray) */
 }
 
 body {
@@ -20,6 +31,7 @@ body {
   padding: 20px;
   text-align: center;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -28,29 +40,42 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
+
 h1 {
   color: var(--accent-color);
 }
+
 input,
-button {
+button,
+select {
   margin: 10px;
   padding: 10px;
   border: none;
   border-radius: 5px;
 }
+
 input {
   background-color: var(--input-bg);
   color: var(--input-color);
   border: 1px solid var(--border-color);
 }
+
 button {
   background-color: var(--button-bg);
   color: var(--text-color);
   cursor: pointer;
 }
+
 button:hover {
   background-color: var(--button-hover);
 }
+
+select {
+  background-color: var(--input-bg);
+  color: var(--input-color);
+  border: 1px solid var(--border-color);
+}
+
 table {
   margin: 20px auto;
   border-collapse: collapse;
@@ -58,11 +83,13 @@ table {
   color: var(--text-color);
   border: 1px solid var(--border-color);
 }
+
 table td {
   border: 1px solid var(--border-color);
   padding: 5px;
   text-align: center;
 }
+
 table th {
   border: 1px solid var(--border-color);
   padding: 5px;
@@ -71,6 +98,7 @@ table th {
   color: var(--text-color);
   font-weight: bold;
 }
+
 #matrixTable input {
   width: 60px;
   text-align: center;
@@ -78,6 +106,7 @@ table th {
   color: var(--input-color);
   border: 1px solid var(--border-color);
 }
+
 #output {
   margin-top: 20px;
   background-color: var(--primary-bg);
@@ -88,6 +117,7 @@ table th {
   white-space: pre-wrap;
   text-align: left;
 }
+
 .hidden {
   display: none;
 }
